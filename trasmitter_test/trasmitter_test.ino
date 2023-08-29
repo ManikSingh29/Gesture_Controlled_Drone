@@ -72,7 +72,7 @@ long duration, inches, cm;
    delay(100);
 if(inches >= 5 && inches<=7)
   {
-    //Serial.println("bfjbdjbjsdn jsndxkSNDKLNskldnksan");
+    //Serial.println("Closing in");
     a=1500;
   }
 else if(inches >= 8 && inches<=10)
@@ -82,7 +82,7 @@ else if(inches >= 8 && inches<=10)
 else if(inches > 10){
 a=0;
 }
-Serial.println("dis"+inches);
+Serial.println("Distance approached: "+inches);
   Throttle.writeMicroseconds(a);
   Roll.writeMicroseconds(roll);
   Yaw.writeMicroseconds(yaw);
